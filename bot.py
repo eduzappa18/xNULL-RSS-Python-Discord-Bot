@@ -7,7 +7,7 @@ import feedparser
 
 
 TOKEN = os.environ['BOT_TOKEN'] # your bot token
-CHANNEL_ID = os.environ['BOT_CHANNEL_ID'] # your discord channel id
+CHANNEL_ID = int(os.environ['BOT_CHANNEL_ID']) # your discord channel id
 RSS = os.environ['BOT_RSS'] # "https://www.x-null.net/forums/external.php?type=rss2&lastpost=1"
 WAITTIME = 60*5 # time to wait between each check in seconds
 
